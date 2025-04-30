@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <title>Contacto</title>
 </head>
 <body>
+    <h1>Contacto</h1>
+    <h2>Déjanos tu mensaje</h2>
+
+    <p>
+        <h3>PONTE EN CONTACTO CON NOSOTROS</h3>
+        <form action="" method="post">
+          
+            <label for="interes">¿Con qué tienda quieres ponerte en contacto?</label><br>
+            <select id="tienda" name="tienda" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="adidas">Adidas</option>
+                <option value="administracionLoterias">Administración loterías</option>
+                <option value="aliexpress">Aliexpress</option>
+                <option value="belros">Belros</option>
+                <option value="brasaYLeña">Brasa y Leña</option>
+                <option value="bershka">Bershka</option>
+                <option value="fnac">FNAC</option>
+                <option value="llaollao">Llaollao</option>
+                <option value="rodilla">Rodilla</option>
+            </select><br><br>
+
+            
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+            
+            <label>¿Cuál es el tema de tu consulta?</label><br>
+            <input type="radio" id="tema" name="puntos" value="informacion" required>
+            <label for="informacion">Más información</label><br>
+
+            <input type="radio" id="oferta" name="puntos" value="oferta">
+            <label for="oferta">Oferta de servicios</label><br>
+
+            <input type="radio" id="busqueda" name="puntos" value="busqueda">
+            <label for="busqueda">Búsqueda de una tienda</label><br>
+
+            <input type="radio" id="reclamacion" name="puntos" value="reclamaciones">
+            <label for="reclamacion">Reclamaciones</label><br><br>
+
+            <!-- politicas -->
+            <input type="radio" id="politicas1" name="puntosPolitica" value="politicas1" required>
+            <label for="politicas1">Acepto que el centro comercial me mantenga informado por correo electrónico de las próximas acciones, promociones y animaciones.</label><br>
+
+            <input type="radio" id="politicas2" name="puntosPolitica" value="politicas2" required>
+            <label for="politicas2">Acepto recibir ofertas y promociones por parte de socios colaboradores del centro comercial.</label><br><br>
+
+           
+            <button type="submit">Enviar</button>
+        </form>
+    </p>
+
+    
     <p>
         <a href="index.html">Inicio</a> |
         <a href="tiendas.html">Tiendas</a> |
@@ -13,65 +75,63 @@
         <a href="restaurantes.html">Restaurantes</a> |
         <a href="visitanos.html">Visítanos</a> |
         <a href="contacto.html">Contacto</a> |
-        <a href="cine.html">Inicio</a> |
-        <a href="avisoLegal.html">Aviso legal</a> |
-      </p>
-      <footer>
+        <a href="cine.html">Cine</a> |
+        <a href="avisoLegal.html">Aviso legal</a>
+    </p>
+
+    
+    <footer>
         <table>
-          <tr>
-            <td>
-              <strong>PLAZA NORTE 2</strong><br>
-              Parque Comercial MegaPark<br>
-              Plaza del Comercio 11-12<br>
-              28703 San Sebastián de los Reyes (Madrid)<br>
-              España<br>
-              <br>
-              <button>CÓMO LLEGAR</button>
-            </td>
-      
-            <td>
-              <strong>INFORMACIÓN</strong><br>
-              Blog<br>
-              Prensa<br>
-              Plano del sitio web<br>
-              Contacto<br>
-              Gestión de cookies<br>
-              Política de Calidad<br>
-              Servicios<br>
-              Aviso Legal<br>
-              Ofertas de Empleo
-            </td>
-      
-            <td>
-              <strong>TODAS LAS MARCAS</strong><br>
-              Moda mujer<br>
-              Niños<br>
-              Moda Deportiva<br>
-              Belleza, salud<br>
-              Cultura, ocio, tecnología<br>
-              Joyería, relojería<br>
-              Alimentación especializada<br>
-              Moda hombre<br>
-              Moda íntima<br>
-              Zapatería, bolsos, complementos<br>
-              Hogar, decoración<br>
-              Servicios<br>
-              Tienda especializada<br>
-              Restaurantes y cafeterías
-            </td>
-      
-            <td>
-              <strong>SÍGUENOS</strong><br>
-              LinkedIn<br>
-              Facebook<br>
-              Instagram<br>
-              X<br>
-              YouTube<br>
-              TikTok
-            </td>
-          </tr>
+            <tr>
+                <td>
+                    <strong>PLAZA NORTE 2</strong><br>
+                    Parque Comercial MegaPark<br>
+                    Plaza del Comercio 11-12<br>
+                    28703 San Sebastián de los Reyes (Madrid)<br>
+                    España<br><br>
+                    <button>CÓMO LLEGAR</button>
+                </td>
+                <td>
+                    <strong>INFORMACIÓN</strong><br>
+                    Blog<br>
+                    Prensa<br>
+                    Plano del sitio web<br>
+                    Contacto<br>
+                    Gestión de cookies<br>
+                    Política de Calidad<br>
+                    Servicios<br>
+                    Aviso Legal<br>
+                    Ofertas de Empleo
+                </td>
+                <td>
+                    <strong>TODAS LAS MARCAS</strong><br>
+                    Moda mujer<br>
+                    Niños<br>
+                    Moda Deportiva<br>
+                    Belleza, salud<br>
+                    Cultura, ocio, tecnología<br>
+                    Joyería, relojería<br>
+                    Alimentación especializada<br>
+                    Moda hombre<br>
+                    Moda íntima<br>
+                    Zapatería, bolsos, complementos<br>
+                    Hogar, decoración<br>
+                    Servicios<br>
+                    Tienda especializada<br>
+                    Restaurantes y cafeterías
+                </td>
+                <td>
+                    <strong>SÍGUENOS</strong><br>
+                    LinkedIn<br>
+                    Facebook<br>
+                    Instagram<br>
+                    X<br>
+                    YouTube<br>
+                    TikTok
+                </td>
+            </tr>
         </table>
-    <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
-      </footer>
+        <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
+    </footer>
 </body>
 </html>
