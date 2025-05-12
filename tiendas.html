@@ -4,6 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiendas</title>
+    <style>
+      /* Estilos básicos */
+      .logos-container {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin: 20px 0;
+      }
+      .logo {
+          width: 150px;
+          cursor: pointer;
+      }
+      /* Estilos del modal */
+      .modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+          justify-content: center;
+          align-items: center;
+      }
+      .modal-content {
+          background: white;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          max-width: 500px;
+          width: 90%;
+      }
+      .modal-content img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+      }
+      .close {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          font-size: 24px;
+          color: white;
+          cursor: pointer;
+      }
+  </style>
+  <script>
+    function openModal(id) {
+        document.getElementById(id).style.display = 'flex';
+    }
+    function closeModal(id) {
+        document.getElementById(id).style.display = 'none';
+    }
+</script>
 </head>
 <body>
     <p>
@@ -13,28 +67,75 @@
         <a href="restaurantes.html">Restaurantes</a> |
         <a href="visitanos.html">Visítanos</a> |
         <a href="contacto.html">Contacto</a> |
-        <a href="cine.html">Cine</a> |
+        <a href="cine.html">Inicio</a> |
         <a href="avisoLegal.html">Aviso legal</a> |
-    </p>
+      </p>
+<!-- Contenedor de logos -->
+<div class="logos-container">
+  <img src="zara-logo.png" alt="Zara" class="logo" onclick="openModal('zara')">
+  <img src="hm-logo.png" alt="H&M" class="logo" onclick="openModal('hm')">
+  <img src="apple-logo.png" alt="Apple" class="logo" onclick="openModal('apple')">
+  <img src="fnac-logo.png" alt="FNAC" class="logo" onclick="openModal('fnac')">
+  <img src="sephora-logo.png" alt="Sephora" class="logo" onclick="openModal('sephora')">
+  <img src="mango-logo.png" alt="Mango" class="logo" onclick="openModal('mango')">
+</div>
 
-    <h1>Nuestras Tiendas</h1>
+<!-- Modales -->
+<div id="zara" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('zara')">&times;</span>
+      <img src="zara-store.jpg" alt="Zara Store">
+      <p>Zara es una de las principales cadenas de moda del mundo. Ofrece ropa, calzado y accesorios para hombres, mujeres y niños.</p>
+      <a href="https://www.zara.com" target="_blank">Visitar sitio web</a>
+  </div>
+</div>
 
-    <p>Plaza Norte 2 cuenta con una gran variedad de tiendas para todos los gustos y necesidades. A continuación, te presentamos algunas de las categorías que puedes encontrar:</p>
+<div id="hm" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('hm')">&times;</span>
+      <img src="hm-store.jpg" alt="H&M Store">
+      <p>H&M ofrece moda y calidad al mejor precio de manera sostenible. Encuentra ropa para toda la familia.</p>
+      <a href="https://www.hm.com" target="_blank">Visitar sitio web</a>
+  </div>
+</div>
 
-    <ul>
-        <li><strong>Moda y complementos:</strong> Zara, Mango, H&M, Bershka, Stradivarius, Pull&Bear y más.</li>
-        <li><strong>Deporte:</strong> Decathlon, JD Sports, Foot Locker.</li>
-        <li><strong>Tecnología:</strong> MediaMarkt, Xiaomi Store, Samsung Experience.</li>
-        <li><strong>Hogar y decoración:</strong> Zara Home, Casa, Maisons du Monde.</li>
-        <li><strong>Joyería y relojería:</strong> Pandora, Time Road, Tous.</li>
-        <li><strong>Salud y belleza:</strong> Primor, Sephora, Druni.</li>
-        <li><strong>Infantil:</strong> Zippy, Chicco, Mayoral.</li>
-        <li><strong>Tiendas especializadas:</strong> FNAC, Game, Natura.</li>
-    </ul>
+<div id="apple" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('apple')">&times;</span>
+      <img src="apple-store.jpg" alt="Apple Store">
+      <p>Apple Store es el lugar ideal para descubrir y comprar productos Apple, como iPhones, iPads y MacBooks.</p>
+      <a href="https://www.apple.com" target="_blank">Visitar sitio web</a>
+  </div>
+</div>
 
-    <p>Ven a descubrir todo lo que Plaza Norte 2 tiene para ofrecerte, ¡la mejor experiencia de compras te espera!</p>
+<div id="fnac" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('fnac')">&times;</span>
+      <img src="fnac-store.jpg" alt="FNAC Store">
+      <p>FNAC es una tienda especializada en tecnología, cultura y ocio. Encuentra libros, música, electrónica y más.</p>
+      <a href="https://www.fnac.es" target="_blank">Visitar sitio web</a>
+  </div>
+</div>
 
-    <footer>
+<div id="sephora" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('sephora')">&times;</span>
+      <img src="sephora-store.jpg" alt="Sephora Store">
+      <p>Sephora es una tienda de belleza que ofrece maquillaje, cuidado de la piel, fragancias y más.</p>
+      <a href="https://www.sephora.es" target="_blank">Visitar sitio web</a>
+  </div>
+</div>
+
+<div id="mango" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('mango')">&times;</span>
+      <img src="mango-store.jpg" alt="Mango Store">
+      <p>Mango es una marca de moda que ofrece ropa y accesorios elegantes para hombres y mujeres.</p>
+      <a href="https://www.mango.com" target="_blank">Visitar sitio web</a>
+  </div>
+</div>
+
+      <footer>
         <table>
           <tr>
             <td>
@@ -42,10 +143,11 @@
               Parque Comercial MegaPark<br>
               Plaza del Comercio 11-12<br>
               28703 San Sebastián de los Reyes (Madrid)<br>
-              España<br><br>
+              España<br>
+              <br>
               <button>CÓMO LLEGAR</button>
             </td>
-
+      
             <td>
               <strong>INFORMACIÓN</strong><br>
               Blog<br>
@@ -58,7 +160,7 @@
               Aviso Legal<br>
               Ofertas de Empleo
             </td>
-
+      
             <td>
               <strong>TODAS LAS MARCAS</strong><br>
               Moda mujer<br>
@@ -76,7 +178,7 @@
               Tienda especializada<br>
               Restaurantes y cafeterías
             </td>
-
+      
             <td>
               <strong>SÍGUENOS</strong><br>
               LinkedIn<br>
@@ -88,7 +190,8 @@
             </td>
           </tr>
         </table>
-        <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
-    </footer>
+    <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
+      </footer>
+      
 </body>
 </html>
