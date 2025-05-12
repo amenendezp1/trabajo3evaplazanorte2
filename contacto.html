@@ -11,7 +11,8 @@
 
     <p>
         <h3>PONTE EN CONTACTO CON NOSOTROS</h3>
-        <form action="" method="post">
+        <form action="http://www.cursos-diseño.es/mostrar.php" method="post" onsubmit="return validarEmails()">
+
           
             <label for="interes">¿Con qué tienda quieres ponerte en contacto?</label><br>
             <select id="tienda" name="tienda" required>
@@ -34,8 +35,18 @@
             <label for="apellidos">Apellidos:</label><br>
             <input type="text" id="apellidos" name="apellidos" required><br><br>
 
+            <label for="apellidos">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br><br>
+
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="confirmacionEmail">Confirmación de email:</label><br>
+            <input type="email" id="confirmacionEmail" name="confirmacionEmail" required><br><br>
+
+            <label for="telefono">Número de teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" title="Debe contener 9 dígitos numéricos" required><br><br>
+        
 
             
             <label for="mensaje">Mensaje:</label><br>
@@ -55,16 +66,33 @@
             <input type="radio" id="reclamacion" name="puntos" value="reclamaciones">
             <label for="reclamacion">Reclamaciones</label><br><br>
 
-            <!-- politicas -->
-            <input type="radio" id="politicas1" name="puntosPolitica" value="politicas1" required>
-            <label for="politicas1">Acepto que el centro comercial me mantenga informado por correo electrónico de las próximas acciones, promociones y animaciones.</label><br>
 
-            <input type="radio" id="politicas2" name="puntosPolitica" value="politicas2" required>
-            <label for="politicas2">Acepto recibir ofertas y promociones por parte de socios colaboradores del centro comercial.</label><br><br>
+            <!-- Políticas -->
+            <label for="politicas1">
+                <input type="checkbox" id="politicas1" name="politicas1" required>
+                Acepto que el centro comercial me mantenga informado por correo electrónico de las próximas acciones, promociones y animaciones.
+            </label><br>
+
+            <label for="politicas2">
+                <input type="checkbox" id="politicas2" name="politicas2">
+                 Acepto recibir ofertas y promociones por parte de socios colaboradores del centro comercial.
+            </label><br><br>
 
            
             <button type="submit">Enviar</button>
         </form>
+        <script>
+            function validarEmails() {
+                const email = document.getElementById('email').value;
+                const confirmacionEmail = document.getElementById('confirmacionEmail').value;
+        
+                if (email !== confirmacionEmail) {
+                    alert('Los correos electrónicos no coinciden. Por favor, verifica.');
+                    return false; // Evita que el formulario se envíe
+                }
+                return true; // Permite el envío si coinciden
+            }
+        </script>
     </p>
 
     
