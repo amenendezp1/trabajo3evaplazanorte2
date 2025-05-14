@@ -3,152 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plaza Norte 2</title>
-  <style>
-    /* Estilos básicos para el slideshow */
-    .slideshow-container {
-      max-width: 600px;
-      position: relative;
-      margin: auto;
-    }
+  <title>Plaza Norte 2 - Inicio</title>
 
-    .slides {
-      display: none;
-      width: 100%;
-    }
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    .active {
-      display: block;
-    }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.3s;
-      user-select: none;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    .prev {
-      left: 0;
-    }
+  <link rel="stylesheet" href="css/style.css">
 
-    .next {
-      right: 0;
-    }
-  </style>
 </head>
 <body>
-  <h1>Centro Comercial Plaza Norte 2</h1>
 
-  <!-- Video -->
-  <h2>Conoce Plaza Norte 2</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Hct2O5-xuE8" title="Video presentación" frameborder="0" allowfullscreen></iframe>
+  <header class="bg-light p-3 mb-4 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <i class="bi bi-shop-window fs-2 me-2"></i>
+          <h1 class="fs-4">Plaza Norte 2</h1>
+        </a>
 
-  <!-- Slideshow / Carrusel -->
-  <h2>Galería de imágenes</h2>
-  <div class="slideshow-container">
-    <img class="slides active" src="imagen1slide.webp" alt="Imagen 1">
-    <img class="slides" src="imagen2slide.webp" alt="Imagen 2">
-    <img class="slides" src="imagen3slide.webp" alt="Imagen 3">
+        <nav class="nav col-12 col-lg-auto me-lg-auto justify-content-center ms-lg-4 mb-md-0">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="tiendas.html" class="nav-link">Tiendas</a></li>
+            <li class="nav-item"><a href="restaurantes.html" class="nav-link">Restaurantes</a></li>
+            <li class="nav-item"><a href="ocio.html" class="nav-link">Ocio</a></li>
+            <li class="nav-item"><a href="cine.html" class="nav-link">Cine</a></li>
+            <li class="nav-item"><a href="visitanos.html" class="nav-link">Visítanos</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-  </div>
+  <main class="container">
 
-  <!-- Navegación -->
-  <p>
-    <a href="index.html">Inicio</a> |
-    <a href="tiendas.html">Tiendas</a> |
-    <a href="ocio.html">Ocio</a> |
-    <a href="restaurantes.html">Restaurantes</a> |
-    <a href="visitanos.html">Visítanos</a> |
-    <a href="contacto.html">Contacto</a> |
-    <a href="cine.html">Cine</a> |
-    <a href="avisoLegal.html">Aviso legal</a>
-  </p>
+    <section id="bienvenida" class="py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Centro Comercial Plaza Norte 2</h1>
+          <p class="lead">
+            Conocido como "La Cúpula de Madrid", Plaza Norte 2 destaca por su arquitectura única inspirada en el Renacimiento veneciano del siglo XVII. Ofrecemos una experiencia de compra y ocio inigualable con más de 200 tiendas, 25 restaurantes y 14 salas de cine.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="visitanos.html" class="btn btn-primary btn-lg px-4 me-md-2">Cómo llegar <i class="bi bi-geo-alt-fill ms-1"></i></a>
+            <a href="tiendas.html" class="btn btn-outline-secondary btn-lg px-4">Ver Tiendas <i class="bi bi-bag-fill ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/7I8nWQ4FY5A?si=ZweNyxyYAb1BP8xJ" title="Video presentación Plaza Norte 2" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Presentación ya incluida con tus párrafos -->
-  <p><strong>Dirección:</strong> Avenida del Juncal, 15-17, San Sebastián de los Reyes, Madrid</p>
-  <p><strong>Inauguración:</strong> 7 de octubre de 2004</p>
-  <p><strong>Superficie construida:</strong> 147.920 m²</p>
-  <p><strong>Tiendas:</strong> Más de 200 establecimientos</p>
-  <p><strong>Restaurantes:</strong> 25 locales de restauración</p>
-  <p><strong>Cines:</strong> 14 salas</p>
-  <p><strong>Plazas de aparcamiento:</strong> 6.800 (4.600 en superficie y 2.200 subterráneas)</p>
+    <section id="galeria" class="py-5 bg-light rounded-3">
+      <h2 class="text-center mb-4">Nuestras Instalaciones</h2>
+      <div id="carouselPlazaNorte" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselPlazaNorte" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselPlazaNorte" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselPlazaNorte" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="max-height: 500px;">
+          <div class="carousel-item active">
+            <img src="images/imagen1slide.webp" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Imagen 1 de Plaza Norte 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/imagen2slide.webp" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Imagen 2 de Plaza Norte 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/imagen3slide.webp" class="d-block w-100" style="object-fit: cover; height: 500px;" alt="Imagen 3 de Plaza Norte 2">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h2>Descripción</h2>
-  <p>Conocido como "La Cúpula de Madrid", Plaza Norte 2 destaca por su arquitectura inspirada en el Renacimiento veneciano del siglo XVII...</p>
+    <section id="informacion-adicional" class="py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h3><i class="bi bi-building me-2"></i>Dirección</h3>
+          <p>Avenida del Juncal, 15-17, San Sebastián de los Reyes, Madrid</p>
+        </div>
+        <div class="col-md-4">
+          <h3><i class="bi bi-clock-history me-2"></i>Inauguración</h3>
+          <p>7 de octubre de 2004</p>
+        </div>
+        <div class="col-md-4">
+          <h3><i class="bi bi-shop me-2"></i>Tiendas</h3>
+          <p>Más de 200 establecimientos y 25 locales de restauración.</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+            <h3><i class="bi bi-p-circle me-2"></i>Aparcamiento</h3>
+            <p>6.800 plazas (4.600 en superficie y 2.200 subterráneas)</p>
+        </div>
+        <div class="col-md-6">
+            <h3><i class="bi bi-brightness-alt-high me-2"></i>Compromiso Sostenible</h3>
+            <p>Plaza Norte 2 se ha aliado con la plataforma francesa The Second Life para fomentar la economía circular.</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>Accesos</h2>
-  <ul>
-    <li><strong>Por carretera:</strong> Autovía del Norte (A-1), salida 19</li>
-    <li><strong>En autobús:</strong> Líneas 4, 156, 171, 180 y N102</li>
-    <li><strong>En metro:</strong> Estación más cercana: Reyes Católicos (Línea 10)</li>
-  </ul>
+  </main>
 
-  <h2>Servicios y tiendas destacadas</h2>
-  <p>Entre las tiendas más destacadas se encuentran Zara, Mango, H&M...</p>
-
-  <h2>Compromiso con la sostenibilidad</h2>
-  <p>Plaza Norte 2 se ha aliado con la plataforma francesa The Second Life...</p>
-
-  <!-- Footer completo sin modificar -->
-  <footer>
-    <table>
-      <tr>
-        <td>
-          <strong>PLAZA NORTE 2</strong><br>
-          Parque Comercial MegaPark<br>
-          Plaza del Comercio 11-12<br>
-          28703 San Sebastián de los Reyes (Madrid)<br>
-          España<br><br>
-          <button>CÓMO LLEGAR</button>
-        </td>
-        <td>
-          <strong>INFORMACIÓN</strong><br>
-          Blog<br>
-          Prensa<br>
-          Plano del sitio web<br>
-          Contacto<br>
-          Gestión de cookies<br>
-          Política de Calidad<br>
-          Servicios<br>
-          Aviso Legal<br>
-          Ofertas de Empleo
-        </td>
-        <td>
-          <strong>TODAS LAS MARCAS</strong><br>
-          Moda mujer<br>
-          Niños<br>
-          Moda Deportiva<br>
-          Belleza, salud<br>
-          Cultura, ocio, tecnología<br>
-          Joyería, relojería<br>
-          Alimentación especializada<br>
-          Moda hombre<br>
-          Moda íntima<br>
-          Zapatería, bolsos, complementos<br>
-          Hogar, decoración<br>
-          Servicios<br>
-          Tienda especializada<br>
-          Restaurantes y cafeterías
-        </td>
-        <td>
-          <strong>SÍGUENOS</strong><br>
-          LinkedIn<br>
-          Facebook<br>
-          Instagram<br>
-          X<br>
-          YouTube<br>
-          TikTok
-        </td>
-      </tr>
-    </table>
-    <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
+  <footer class="py-5 mt-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-3">
+          <h5>PLAZA NORTE 2</h5>
+          <p class="small">
+            Parque Comercial MegaPark<br>
+            Plaza del Comercio 11-12<br>
+            28703 San Sebastián de los Reyes (Madrid)<br>
+            España
+          </p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Plaza+Norte+2" target="_blank" class="btn btn-outline-light btn-sm">Cómo llegar <i class="bi bi-pin-map-fill"></i></a>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Información</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white link-light">Blog</a></li>
+            <li><a href="#" class="text-white link-light">Prensa</a></li>
+            <li><a href="visitanos.html#plano" class="text-white link-light">Plano del centro</a></li>
+            <li><a href="contacto.html" class="text-white link-light">Contacto</a></li>
+            <li><a href="avisoLegal.html" class="text-white link-light">Aviso Legal</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Servicios</h5>
+          <ul class="list-unstyled">
+            <li><a href="visitanos.html#wifi" class="text-white link-light">Wifi Gratis</a></li>
+            <li><a href="visitanos.html#club-infantil" class="text-white link-light">Club Infantil</a></li>
+            <li><a href="visitanos.html#parking" class="text-white link-light">Parking</a></li>
+            <li><a href="visitanos.html#puntos-carga" class="text-white link-light">Puntos de Carga</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <h5>Síguenos</h5>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white link-light fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between py-2">
+        <p class="small">&copy; 2024-{new Date().getFullYear()} Plaza Norte 2. Todos los derechos reservados.</p>
+        <p class="small">Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/" target="_blank" class="text-white link-light fw-bold">www.plazanorte2.com</a></p>
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
