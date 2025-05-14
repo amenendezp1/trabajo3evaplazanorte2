@@ -1,133 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ocio</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona de Ocio - Plaza Norte 2</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Archivo CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p>
-    <a href="index.html">Inicio</a> |
-    <a href="tiendas.html">Tiendas</a> |
-    <a href="ocio.html">Ocio</a> |
-    <a href="restaurantes.html">Restaurantes</a> |
-    <a href="visitanos.html">Visítanos</a> |
-    <a href="contacto.html">Contacto</a> |
-    <a href="cine.html">Cine</a> |
-    <a href="avisoLegal.html">Aviso legal</a> |
-  </p>
+  <!-- Navegación -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Plaza Norte 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="tiendas.html">Tiendas</a></li>
+            <li class="nav-item"><a class="nav-link active" href="ocio.html">Ocio</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restaurantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="visitanos.html">Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <h1>Zona de Ocio</h1>
-  <p>Haz clic en los logos para más información:</p>
+  <!-- Contenido principal -->
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Zona de Ocio</h1>
+    <p class="text-center">Haz clic en los logos para más información:</p>
 
-  <img src="images/logoCinesa.png" alt="Cinesa" class="logo" onclick="openModal('modal1')">
-  <img src="images/logoSouldPark.png" alt="Sould Park" class="logo" onclick="openModal('modal2')">
-  <img src="images/logoZeroLatency.png" alt="Zero Latency VR" class="logo" onclick="openModal('modal3')">
-
-  <!-- Modal 1 -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal1')">&times;</span>
-      <h2>Cinesa</h2>
-      <iframe src="https://www.youtube.com/embed/efK7tL0WjU8" frameborder="0" allowfullscreen></iframe>
-      <p>Cinesa ofrece la mejor experiencia de cine con las últimas películas, pantallas gigantes y butacas reclinables.</p>
-      <a href="https://www.cinesa.es/" target="_blank">Visita su web oficial</a>
+    <!-- Logos -->
+    <div class="d-flex justify-content-center flex-wrap">
+      <img src="images/logoCinesa.png" alt="Cinesa" class="logo" onclick="openModal('modal1')">
+      <img src="images/logoSouldPark.png" alt="Sould Park" class="logo" onclick="openModal('modal2')">
+      <img src="images/logoZeroLatency.png" alt="Zero Latency VR" class="logo" onclick="openModal('modal3')">
     </div>
-  </div>
 
-  <!-- Modal 2 -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal2')">&times;</span>
-      <h2>Sould Park</h2>
-      <iframe src="https://www.youtube.com/embed/qF1oOR6ykG4" frameborder="0" allowfullscreen></iframe>
-      <p>Un parque infantil lleno de atracciones, juegos y diversión para los más pequeños en un entorno seguro.</p>
-      <a href="https://www.souldpark.com/" target="_blank">Visita su web oficial</a>
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cinesa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://www.youtube.com/embed/efK7tL0WjU8" frameborder="0" allowfullscreen></iframe>
+            <p>Cinesa ofrece la mejor experiencia de cine con las últimas películas, pantallas gigantes y butacas reclinables.</p>
+            <a href="https://www.cinesa.es/" target="_blank" class="btn btn-primary">Visita su web oficial</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <!-- Modal 3 -->
-  <div id="modal3" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal3')">&times;</span>
-      <h2>Zero Latency VR</h2>
-      <iframe src="https://www.youtube.com/embed/lLaTuq19VJw" frameborder="0" allowfullscreen></iframe>
-      <p>Una experiencia inmersiva de realidad virtual multijugador donde te moverás libremente en un mundo virtual.</p>
-      <a href="https://www.zerolatencyvr.com/" target="_blank">Visita su web oficial</a>
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sould Park</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://www.youtube.com/embed/qF1oOR6ykG4" frameborder="0" allowfullscreen></iframe>
+            <p>Un parque infantil lleno de atracciones, juegos y diversión para los más pequeños en un entorno seguro.</p>
+            <a href="https://www.souldpark.com/" target="_blank" class="btn btn-primary">Visita su web oficial</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Zero Latency VR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://www.youtube.com/embed/lLaTuq19VJw" frameborder="0" allowfullscreen></iframe>
+            <p>Una experiencia inmersiva de realidad virtual multijugador donde te moverás libremente en un mundo virtual.</p>
+            <a href="https://www.zerolatencyvr.com/" target="_blank" class="btn btn-primary">Visita su web oficial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 Plaza Norte 2. Todos los derechos reservados.</p>
+      <p>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     function openModal(id) {
-      document.getElementById(id).style.display = "block";
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).style.display = "none";
-    }
-
-    // Cerrar modal al hacer clic fuera
-    window.onclick = function(event) {
-      const modals = document.querySelectorAll('.modal');
-      modals.forEach(modal => {
-        if (event.target === modal) modal.style.display = "none";
-      });
+      const modal = new bootstrap.Modal(document.getElementById(id));
+      modal.show();
     }
   </script>
-
-  <footer>
-    <table>
-      <tr>
-        <td>
-          <strong>PLAZA NORTE 2</strong><br>
-          Parque Comercial MegaPark<br>
-          Plaza del Comercio 11-12<br>
-          28703 San Sebastián de los Reyes (Madrid)<br>
-          España<br><br>
-          <button>CÓMO LLEGAR</button>
-        </td>
-        <td>
-          <strong>INFORMACIÓN</strong><br>
-          Blog<br>
-          Prensa<br>
-          Plano del sitio web<br>
-          Contacto<br>
-          Gestión de cookies<br>
-          Política de Calidad<br>
-          Servicios<br>
-          Aviso Legal<br>
-          Ofertas de Empleo
-        </td>
-        <td>
-          <strong>TODAS LAS MARCAS</strong><br>
-          Moda mujer<br>
-          Niños<br>
-          Moda Deportiva<br>
-          Belleza, salud<br>
-          Cultura, ocio, tecnología<br>
-          Joyería, relojería<br>
-          Alimentación especializada<br>
-          Moda hombre<br>
-          Moda íntima<br>
-          Zapatería, bolsos, complementos<br>
-          Hogar, decoración<br>
-          Servicios<br>
-          Tienda especializada<br>
-          Restaurantes y cafeterías
-        </td>
-        <td>
-          <strong>SÍGUENOS</strong><br>
-          LinkedIn<br>
-          Facebook<br>
-          Instagram<br>
-          X<br>
-          YouTube<br>
-          TikTok
-        </td>
-      </tr>
-    </table>
-    <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
-  </footer>
 </body>
 </html>
