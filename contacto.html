@@ -1,165 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Plaza Norte 2</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Contacto</h1>
-    <h2>Déjanos tu mensaje</h2>
 
-    <p>
-        <h3>PONTE EN CONTACTO CON NOSOTROS</h3>
-        <form action="http://www.cursos-diseño.es/mostrar.php" method="post" onsubmit="return validarEmails()">
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">Contacto</h1>
+    <h2 class="mb-3 text-center">Déjanos tu mensaje</h2>
+    <h3 class="mb-4 text-center">PONTE EN CONTACTO CON NOSOTROS</h3>
 
-          
-            <label for="interes">¿Con qué tienda quieres ponerte en contacto?</label><br>
-            <select id="tienda" name="tienda" required>
-                <option value="" disabled selected>Selecciona una opción</option>
-                <option value="adidas">Adidas</option>
-                <option value="administracionLoterias">Administración loterías</option>
-                <option value="aliexpress">Aliexpress</option>
-                <option value="belros">Belros</option>
-                <option value="brasaYLeña">Brasa y Leña</option>
-                <option value="bershka">Bershka</option>
-                <option value="fnac">FNAC</option>
-                <option value="llaollao">Llaollao</option>
-                <option value="rodilla">Rodilla</option>
-            </select><br><br>
+    <form action="http://www.cursos-diseño.es/mostrar.php" method="post" onsubmit="return validarEmails()">
+      <div class="mb-3">
+        <label for="tienda" class="form-label">¿Con qué tienda quieres ponerte en contacto?</label>
+        <select class="form-select" id="tienda" name="tienda" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="adidas">Adidas</option>
+          <option value="administracionLoterias">Administración loterías</option>
+          <option value="aliexpress">Aliexpress</option>
+          <option value="belros">Belros</option>
+          <option value="brasaYLeña">Brasa y Leña</option>
+          <option value="bershka">Bershka</option>
+          <option value="fnac">FNAC</option>
+          <option value="llaollao">Llaollao</option>
+          <option value="rodilla">Rodilla</option>
+        </select>
+      </div>
 
-            
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="apellidos" class="form-label">Apellidos:</label>
+          <input type="text" class="form-control" id="apellidos" name="apellidos" required />
+        </div>
+      </div>
 
-            <label for="apellidos">Apellidos:</label><br>
-            <input type="text" id="apellidos" name="apellidos" required><br><br>
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Dirección:</label>
+        <input type="text" class="form-control" id="direccion" name="direccion" required />
+      </div>
 
-            <label for="apellidos">Dirección:</label><br>
-            <input type="text" id="direccion" name="direccion" required><br><br>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="confirmacionEmail" class="form-label">Confirmación de email:</label>
+          <input type="email" class="form-control" id="confirmacionEmail" name="confirmacionEmail" required />
+        </div>
+      </div>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="confirmacionEmail">Confirmación de email:</label><br>
-            <input type="email" id="confirmacionEmail" name="confirmacionEmail" required><br><br>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Número de teléfono:</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{9}" title="Debe contener 9 dígitos numéricos" required />
+      </div>
 
-            <label for="telefono">Número de teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" title="Debe contener 9 dígitos numéricos" required><br><br>
-        
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje:</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
 
-            
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+      <fieldset class="mb-3">
+        <legend>¿Cuál es el tema de tu consulta?</legend>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="puntos" id="tema" value="informacion" required />
+          <label class="form-check-label" for="tema">Más información</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="puntos" id="oferta" value="oferta" />
+          <label class="form-check-label" for="oferta">Oferta de servicios</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="puntos" id="busqueda" value="busqueda" />
+          <label class="form-check-label" for="busqueda">Búsqueda de una tienda</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="puntos" id="reclamacion" value="reclamaciones" />
+          <label class="form-check-label" for="reclamacion">Reclamaciones</label>
+        </div>
+      </fieldset>
 
-            
-            <label>¿Cuál es el tema de tu consulta?</label><br>
-            <input type="radio" id="tema" name="puntos" value="informacion" required>
-            <label for="informacion">Más información</label><br>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="politicas1" name="politicas1" required />
+        <label class="form-check-label" for="politicas1">
+          Acepto que el centro comercial me mantenga informado por correo electrónico.
+        </label>
+      </div>
 
-            <input type="radio" id="oferta" name="puntos" value="oferta">
-            <label for="oferta">Oferta de servicios</label><br>
+      <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox" id="politicas2" name="politicas2" />
+        <label class="form-check-label" for="politicas2">
+          Acepto recibir ofertas de socios colaboradores del centro comercial.
+        </label>
+      </div>
 
-            <input type="radio" id="busqueda" name="puntos" value="busqueda">
-            <label for="busqueda">Búsqueda de una tienda</label><br>
+      <button type="submit" class="btn btn-primary w-100">Enviar</button>
+    </form>
+  </div>
 
-            <input type="radio" id="reclamacion" name="puntos" value="reclamaciones">
-            <label for="reclamacion">Reclamaciones</label><br><br>
-
-
-            <!-- Políticas -->
-            <label for="politicas1">
-                <input type="checkbox" id="politicas1" name="politicas1" required>
-                Acepto que el centro comercial me mantenga informado por correo electrónico de las próximas acciones, promociones y animaciones.
-            </label><br>
-
-            <label for="politicas2">
-                <input type="checkbox" id="politicas2" name="politicas2">
-                 Acepto recibir ofertas y promociones por parte de socios colaboradores del centro comercial.
-            </label><br><br>
-
-           
-            <button type="submit">Enviar</button>
-        </form>
-        <script>
-            function validarEmails() {
-                const email = document.getElementById('email').value;
-                const confirmacionEmail = document.getElementById('confirmacionEmail').value;
-        
-                if (email !== confirmacionEmail) {
-                    alert('Los correos electrónicos no coinciden. Por favor, verifica.');
-                    return false; // Evita que el formulario se envíe
-                }
-                return true; // Permite el envío si coinciden
-            }
-        </script>
-    </p>
-
-    
-    <p>
-        <a href="index.html">Inicio</a> |
-        <a href="tiendas.html">Tiendas</a> |
-        <a href="ocio.html">Ocio</a> |
-        <a href="restaurantes.html">Restaurantes</a> |
-        <a href="visitanos.html">Visítanos</a> |
-        <a href="contacto.html">Contacto</a> |
-        <a href="cine.html">Cine</a> |
-        <a href="avisoLegal.html">Aviso legal</a>
-    </p>
-
-    
-    <footer>
-        <table>
-            <tr>
-                <td>
-                    <strong>PLAZA NORTE 2</strong><br>
-                    Parque Comercial MegaPark<br>
-                    Plaza del Comercio 11-12<br>
-                    28703 San Sebastián de los Reyes (Madrid)<br>
-                    España<br><br>
-                    <button>CÓMO LLEGAR</button>
-                </td>
-                <td>
-                    <strong>INFORMACIÓN</strong><br>
-                    Blog<br>
-                    Prensa<br>
-                    Plano del sitio web<br>
-                    Contacto<br>
-                    Gestión de cookies<br>
-                    Política de Calidad<br>
-                    Servicios<br>
-                    Aviso Legal<br>
-                    Ofertas de Empleo
-                </td>
-                <td>
-                    <strong>TODAS LAS MARCAS</strong><br>
-                    Moda mujer<br>
-                    Niños<br>
-                    Moda Deportiva<br>
-                    Belleza, salud<br>
-                    Cultura, ocio, tecnología<br>
-                    Joyería, relojería<br>
-                    Alimentación especializada<br>
-                    Moda hombre<br>
-                    Moda íntima<br>
-                    Zapatería, bolsos, complementos<br>
-                    Hogar, decoración<br>
-                    Servicios<br>
-                    Tienda especializada<br>
-                    Restaurantes y cafeterías
-                </td>
-                <td>
-                    <strong>SÍGUENOS</strong><br>
-                    LinkedIn<br>
-                    Facebook<br>
-                    Instagram<br>
-                    X<br>
-                    YouTube<br>
-                    TikTok
-                </td>
-            </tr>
-        </table>
-        <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
-    </footer>
+  <!-- JavaScript de Bootstrap y validación personalizada -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function validarEmails() {
+      const email = document.getElementById("email").value;
+      const confirmacionEmail = document.getElementById("confirmacionEmail").value;
+      if (email !== confirmacionEmail) {
+        alert("Los correos electrónicos no coinciden. Por favor, verifica.");
+        return false;
+      }
+      return true;
+    }
+  </script>
 </body>
 </html>
