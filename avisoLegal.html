@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviso legal</title>
+    <link rel="stylesheet" href="bootstrap.css">
+       <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 
-    <p>
-        <a href="index.html">Inicio</a> |
-        <a href="tiendas.html">Tiendas</a> |
-        <a href="ocio.html">Ocio</a> |
-        <a href="restaurantes.html">Restaurantes</a> |
-        <a href="visitanos.html">Visítanos</a> |
-        <a href="contacto.html">Contacto</a> |
-        <a href="cine.html">Cine</a> |
-        <a href="avisoLegal.html">Aviso legal</a> |
-    </p>
+    <header class="bg-light p-3 mb-4 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <i class="bi bi-shop-window fs-2 me-2"></i>
+          <h1 class="fs-4">Plaza Norte 2</h1>
+        </a>
+
+        <nav class="nav col-12 col-lg-auto me-lg-auto justify-content-center ms-lg-4 mb-md-0">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link " aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="tiendas.html" class="nav-link">Tiendas</a></li>
+            <li class="nav-item"><a href="restaurantes.html" class="nav-link ">Restaurantes</a></li>
+            <li class="nav-item"><a href="ocio.html" class="nav-link ">Ocio</a></li>
+            <li class="nav-item"><a href="cine.html" class="nav-link">Cine</a></li>
+            <li class="nav-item"><a href="visitanos.html" class="nav-link">Visítanos</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+             <li class="nav-item"><a href="avisoLegal.html" class="nav-link active">Aviso legal</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> 
+
 
     <h1>Aviso Legal</h1>
 
@@ -38,63 +55,55 @@
     <h2>Legislación aplicable</h2>
     <p>El presente aviso legal se rige por la legislación española. Cualquier controversia que se derive del uso de este sitio web será sometida a los juzgados y tribunales de Madrid.</p>
 
-    <footer>
-        <table>
-            <tr>
-                <td>
-                    <strong>PLAZA NORTE 2</strong><br>
-                    Parque Comercial MegaPark<br>
-                    Plaza del Comercio 11-12<br>
-                    28703 San Sebastián de los Reyes (Madrid)<br>
-                    España<br>
-                    <br>
-                    <button>CÓMO LLEGAR</button>
-                </td>
+    <footer class="py-5 mt-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-3">
+          <h5>PLAZA NORTE 2</h5>
+          <p class="small">
+            Parque Comercial MegaPark<br>
+            Plaza del Comercio 11-12<br>
+            28703 San Sebastián de los Reyes (Madrid)<br>
+            España
+          </p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Plaza+Norte+2" target="_blank" class="btn btn-outline-light btn-sm">Cómo llegar <i class="bi bi-pin-map-fill"></i></a>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Información</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white link-light">Blog</a></li>
+            <li><a href="#" class="text-white link-light">Prensa</a></li>
+            <li><a href="visitanos.html#plano" class="text-white link-light">Plano del centro</a></li>
+            <li><a href="contacto.html" class="text-white link-light">Contacto</a></li>
+            <li><a href="avisoLegal.html" class="text-white link-light">Aviso Legal</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Servicios</h5>
+          <ul class="list-unstyled">
+            <li><a href="visitanos.html#wifi" class="text-white link-light">Wifi Gratis</a></li>
+            <li><a href="visitanos.html#club-infantil" class="text-white link-light">Club Infantil</a></li>
+            <li><a href="visitanos.html#parking" class="text-white link-light">Parking</a></li>
+            <li><a href="visitanos.html#puntos-carga" class="text-white link-light">Puntos de Carga</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <h5>Síguenos</h5>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white link-light fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between py-2">
+        <p class="small">&copy; 2024-{new Date().getFullYear()} Plaza Norte 2. Todos los derechos reservados.</p>
+        <p class="small">Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/" target="_blank" class="text-white link-light fw-bold">www.plazanorte2.com</a></p>
+      </div>
+    </div>
+  </footer>
 
-                <td>
-                    <strong>INFORMACIÓN</strong><br>
-                    Blog<br>
-                    Prensa<br>
-                    Plano del sitio web<br>
-                    Contacto<br>
-                    Gestión de cookies<br>
-                    Política de Calidad<br>
-                    Servicios<br>
-                    Aviso Legal<br>
-                    Ofertas de Empleo
-                </td>
-
-                <td>
-                    <strong>TODAS LAS MARCAS</strong><br>
-                    Moda mujer<br>
-                    Niños<br>
-                    Moda Deportiva<br>
-                    Belleza, salud<br>
-                    Cultura, ocio, tecnología<br>
-                    Joyería, relojería<br>
-                    Alimentación especializada<br>
-                    Moda hombre<br>
-                    Moda íntima<br>
-                    Zapatería, bolsos, complementos<br>
-                    Hogar, decoración<br>
-                    Servicios<br>
-                    Tienda especializada<br>
-                    Restaurantes y cafeterías
-                </td>
-
-                <td>
-                    <strong>SÍGUENOS</strong><br>
-                    LinkedIn<br>
-                    Facebook<br>
-                    Instagram<br>
-                    X<br>
-                    YouTube<br>
-                    TikTok
-                </td>
-            </tr>
-        </table>
-        <p>Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/">www.plazanorte2.com</a></p>
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
