@@ -7,29 +7,42 @@
   <title>Restaurantes</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 
   <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-    .logo {
-      cursor: pointer;
-      margin: 10px;
-    }
-  </style>
+  
 </head>
 
 <body>
-  <header class="text-center p-4 bg-dark text-white">
-    <h1><i class="bi bi-shop"></i> Restaurantes</h1>
-  </header>
+  
+  <header class="bg-light p-3 mb-4 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <i class="bi bi-shop-window fs-2 me-2"></i>
+          <h1 class="fs-4">Plaza Norte 2</h1>
+        </a>
+
+        <nav class="nav col-12 col-lg-auto me-lg-auto justify-content-center ms-lg-4 mb-md-0">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link " aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="tiendas.html" class="nav-link">Tiendas</a></li>
+            <li class="nav-item"><a href="restaurantes.html" class="nav-link active">Restaurantes</a></li>
+            <li class="nav-item"><a href="ocio.html" class="nav-link">Ocio</a></li>
+            <li class="nav-item"><a href="cine.html" class="nav-link">Cine</a></li>
+            <li class="nav-item"><a href="visitanos.html" class="nav-link">Visítanos</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+             <li class="nav-item"><a href="avisoLegal.html" class="nav-link">Aviso legal</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> 
 
   <main class="container my-4">
     <section class="row justify-content-center text-center">
@@ -184,9 +197,55 @@
     </div>
   </section>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Restaurantes Populares. Todos los derechos reservados.</p>
+  <footer class="py-5 mt-4 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-3">
+          <h5>PLAZA NORTE 2</h5>
+          <p class="small">
+            Parque Comercial MegaPark<br>
+            Plaza del Comercio 11-12<br>
+            28703 San Sebastián de los Reyes (Madrid)<br>
+            España
+          </p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Plaza+Norte+2" target="_blank" class="btn btn-outline-light btn-sm">Cómo llegar <i class="bi bi-pin-map-fill"></i></a>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Información</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white link-light">Blog</a></li>
+            <li><a href="#" class="text-white link-light">Prensa</a></li>
+            <li><a href="visitanos.html#plano" class="text-white link-light">Plano del centro</a></li>
+            <li><a href="contacto.html" class="text-white link-light">Contacto</a></li>
+            <li><a href="avisoLegal.html" class="text-white link-light">Aviso Legal</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Servicios</h5>
+          <ul class="list-unstyled">
+            <li><a href="visitanos.html#wifi" class="text-white link-light">Wifi Gratis</a></li>
+            <li><a href="visitanos.html#club-infantil" class="text-white link-light">Club Infantil</a></li>
+            <li><a href="visitanos.html#parking" class="text-white link-light">Parking</a></li>
+            <li><a href="visitanos.html#puntos-carga" class="text-white link-light">Puntos de Carga</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <h5>Síguenos</h5>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white link-light fs-4 me-2"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white link-light fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between py-2">
+        <p class="small">&copy; 2024-{new Date().getFullYear()} Plaza Norte 2. Todos los derechos reservados.</p>
+        <p class="small">Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/" target="_blank" class="text-white link-light fw-bold">www.plazanorte2.com</a></p>
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
