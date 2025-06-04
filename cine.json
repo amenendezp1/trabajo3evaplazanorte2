@@ -1,112 +1,26 @@
 [
     {
-        "id": 1,
-        "nombre": "Avatar",
-        "duracion": 162,
-        "genero": "Ciencia Ficción",
-        "sinopsis": "En un mundo alienígena, un ex marine se convierte en un avatar para interactuar con los nativos.",
-        "calificacion": 7.8,
-        "trailer": "https://www.youtube.com/watch?v=5PSNL1qE6VY",
-        "imagen": "https://m.media-amazon.com/images/I/71gk+0+2JtL._AC_SY679_.jpg"
+        "titulo": "Godzilla Minus One",
+        "horarios": ["16:00", "19:00", "22:00"]
     },
     {
-        "id": 2,
-        "nombre": "Titanic",
-        "duracion": 195,
-        "genero": "Romance",
-        "sinopsis": "Una joven aristócrata y un artista pobre se enamoran a bordo del Titanic.",
-        "calificacion": 7.8,
-        "trailer": "https://www.youtube.com/watch?v=kVrqfYjkTdQ",
-        "imagen": "https://m.media-amazon.com/images/I/51Zx3X4j9PL._AC_.jpg"
+        "titulo": "Dune Parte 2",
+        "horarios": ["17:30", "20:30"]
     },
     {
-        "id": 3,
-        "nombre": "Jurassic Park",
-        "duracion": 127,
-        "genero": "Aventura",
-        "sinopsis": "Un parque temático con dinosaurios clonados se convierte en un lugar peligroso.",
-        "calificacion": 8.1,
-        "trailer": "https://www.youtube.com/watch?v=lc0UehYemQA",
-        "imagen": "https://m.media-amazon.com/images/I/51z5Z2+4JtL._AC_.jpg"
+        "titulo": "Intensamente 2",
+        "horarios": ["15:00", "18:00", "21:00"]
     },
     {
-        "id": 4,
-        "nombre": "The Godfather",
-        "duracion": 175,
-        "genero": "Crimen",
-        "sinopsis": "La historia de la familia mafiosa Corleone y su patriarca, Vito Corleone.",
-        "calificacion": 9.2,
-        "trailer": "https://www.youtube.com/watch?v=sY1S34973zA",
-        "imagen": "https://m.media-amazon.com/images/I/51x6+7+QePL._AC_.jpg"
+        "titulo": "Spider-Man: Cruzando el Multiverso",
+        "horarios": ["14:30", "17:45", "21:15"]
     },
     {
-        "id": 5,
-        "nombre": "The Dark Knight",
-        "duracion": 152,
-        "genero": "Acción",
-        "sinopsis": "Batman enfrenta al Joker, un criminal que busca sumergir a Gotham en el caos.",
-        "calificacion": 9.0,
-        "trailer": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
-        "imagen": "https://m.media-amazon.com/images/I/51k6+7+QePL._AC_.jpg"
+        "titulo": "Oppenheimer",
+        "horarios": ["16:15", "20:00"]
     },
     {
-        "id": 6,
-        "nombre": "Pulp Fiction",
-        "duracion": 154,
-        "genero": "Crimen",
-        "sinopsis": "Varios personajes se entrelazan en historias de crimen y redención.",
-        "calificacion": 8.9,
-        "trailer": "https://www.youtube.com/watch?v=wZB1j0g2X4A",
-        "imagen": "https://m.media-amazon.com/images/I/51x6+7+QePL._AC_.jpg"
-    },
-    {
-        "id": 7,
-        "nombre": "Forrest Gump",
-        "duracion": 142,
-        "genero": "Drama",
-        "sinopsis": "La vida de un hombre con un coeficiente intelectual bajo que vive eventos históricos.",
-        "calificacion": 8.8,
-        "trailer": "https://www.youtube.com/watch?v=bLvqoHBptjg",
-        "imagen": "https://m.media-amazon.com/images/I/51x6+7+QePL._AC_.jpg"
-    },
-    {
-        "id": 8,
-        "nombre": "Inception",
-        "duracion": 148,
-        "genero": "Ciencia Ficción",
-        "sinopsis": "Un ladrón que roba secretos a través de los sueños es dado una tarea imposible.",
-        "calificacion": 8.8,
-        "trailer": "https://www.youtube.com/watch?v=YoHD9XEInc0",
-        "imagen": "https://m.media-amazon.com/images/I/51x6+7+QePL._AC_.jpg"
-    },
-    {
-        "id": 9,
-        "nombre": "The Matrix",
-        "duracion": 136,
-        "genero": "Ciencia Ficción",
-        "sinopsis": "Un hacker descubre la verdad sobre su realidad y su papel en la guerra contra sus opresores.",
-        "calificacion": 8.7,
-        "trailer": "https://www.youtube.com/watch?v=vKQi3bpLyUy",
-        "imagen": "https://m.media-amazon.com/images/I/51x6+7+QePL._AC_.jpg"
-    },
-    {
-        "id": 10,
-        "nombre": "Fight Club",
-        "duracion": 139,
-        "genero": "Drama",
-        "sinopsis": "Un hombre insatisfecho con su vida forma un club de lucha clandestino.",
-        "calificacion": 8.8,
-        "trailer": "https://www.youtube.com/watch?v=SUXWAEX2jlg",
-        "imagen": "https://m.media-amazon.com/images/I/51x6+7+QePL._AC_.jpg"
-    },
-    {
-        "id": 11,
-        "nombre": "The Shawshank Redemption",
-        "duracion": 142,
-        "genero": "Drama",
-        "sinopsis": "La historia de un banquero condenado a cadena perpetua en una prisión de máxima seguridad.",
-        "calificacion": 9.3,
-        "trailer": "https://www.youtube.com/watch?v=6hB3S9bIaco",
-        "imagen": "https://m.media-amazon.com/images/I/51x6+7+QePL._AC_.jpg"
+        "titulo": "Kung Fu Panda 4",
+        "horarios": ["13:00", "15:30", "18:00"]
     }
 ]
