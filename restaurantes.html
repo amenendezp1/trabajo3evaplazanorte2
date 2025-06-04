@@ -15,6 +15,8 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="styles.css">
+
   
 </head>
 
@@ -45,26 +47,31 @@
   </header> 
 
   <main class="container my-4">
-    <section class="row justify-content-center text-center">
-      <article class="col-6 col-md-2">
-        <img src="images/logoBurgerKing.png" alt="Burger King" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal1">
-      </article>
-      <article class="col-6 col-md-2">
-        <img src="images/logoStarbucks.webp" alt="Starbucks" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal2">
-      </article>
-      <article class="col-6 col-md-2">
-        <img src="images/logoMcdonalds.webp" alt="McDonald's" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal3">
-      </article>
-      <article class="col-6 col-md-2">
-        <img src="images/logoTagliatella.png" alt="Tagliatella" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal4">
-      </article>
-      <article class="col-6 col-md-2">
-        <img src="images/logoCienMontaditos.jpg" alt="100 Montaditos" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal5">
-      </article>
-      <article class="col-6 col-md-2">
-        <img src="images/logoginos.jpg" alt="Ginos" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal6">
-      </article>
-    </section>
+  <section class="logos-container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+        <img src="logoBurgerKing.png" alt="Burger King" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal1">
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+        <img src="logoStarbucks.webp" alt="Starbucks" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal2">
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center">
+        <img src="logoMcdonalds.webp" alt="McDonald's" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal3">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+        <img src="logoTagliatella.png" alt="Tagliatella" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal4">
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center mb-3 mb-md-0">
+        <img src="logoCienMontaditos.jpg" alt="100 Montaditos" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal5">
+      </div>
+      <div class="col-12 col-md-4 d-flex justify-content-center">
+        <img src="logoginos.jpg" alt="Ginos" class="img-fluid logo" data-bs-toggle="modal" data-bs-target="#modal6">
+      </div>
+    </div>
+  </section>
+</main>
 
     <!-- Acordeón -->
     <section class="my-5">
@@ -108,7 +115,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <img src="restauranteBurgerKing.jpg" class="img-fluid mb-3" alt="Burger King interior">
+            <img src="burguerInterior.jpeg" class="img-fluid mb-3" alt="Burger King interior">
             <p>Especialistas en hamburguesas a la parrilla. Rápido, sabroso y popular.</p>
             <a href="https://www.burgerking.es/" target="_blank">Visitar web oficial</a>
           </div>
@@ -124,7 +131,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <img src="images/restauranteStarbucks.jpg" class="img-fluid mb-3" alt="Starbucks interior">
+            <img src="starbucksInterior.jpg" class="img-fluid mb-3" alt="Starbucks interior">
             <p>Café de especialidad y ambiente relajado. Perfecto para una pausa con estilo.</p>
             <a href="https://www.starbucks.es/" target="_blank">Visitar web oficial</a>
           </div>
@@ -140,7 +147,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <img src="images/restauranteMcdonalds.jpg" class="img-fluid mb-3" alt="McDonald's interior">
+            <img src="mcInterior.jpeg" class="img-fluid mb-3" alt="McDonald's interior">
             <p>El clásico de comida rápida. Hamburguesas, patatas y helados para todos.</p>
             <a href="https://www.mcdonalds.es/" target="_blank">Visitar web oficial</a>
           </div>
@@ -156,7 +163,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <img src="images/restauranteTagliatella.jpg" class="img-fluid mb-3" alt="Tagliatella interior">
+            <img src="tagliaInterior.jpg" class="img-fluid mb-3" alt="Tagliatella interior">
             <p>Auténtica cocina italiana: pastas, pizzas y postres tradicionales.</p>
             <a href="https://www.latagliatella.es/" target="_blank">Visitar web oficial</a>
           </div>
@@ -172,7 +179,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <img src="images/restauranteCienMontaditos.jpg" class="img-fluid mb-3" alt="100 Montaditos interior">
+            <img src="cienmonInterior.jpeg" class="img-fluid mb-3" alt="100 Montaditos interior">
             <p>Tapas, bocadillos y cerveza a buen precio. Ideal para compartir.</p>
             <a href="https://spain.100montaditos.com/" target="_blank">Visitar web oficial</a>
           </div>
@@ -188,7 +195,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
-            <img src="images/restauranteGinos.jpg" class="img-fluid mb-3" alt="Ginos interior">
+            <img src="ginosInterior.jpeg" class="img-fluid mb-3" alt="Ginos interior">
             <p>Cocina italiana con un toque moderno. Pastas, carnes y pizzas al horno.</p>
             <a href="https://www.ginos.es/" target="_blank">Visitar web oficial</a>
           </div>
@@ -239,7 +246,7 @@
       </div>
       <hr>
       <div class="d-flex justify-content-between py-2">
-        <p class="small">&copy; 2024-{new Date().getFullYear()} Plaza Norte 2. Todos los derechos reservados.</p>
+        <p class="small"> Plaza Norte 2. Todos los derechos reservados.</p>
         <p class="small">Puedes visitar su sitio web oficial para obtener más detalles: <a href="https://www.plazanorte2.com/" target="_blank" class="text-white link-light fw-bold">www.plazanorte2.com</a></p>
       </div>
     </div>
